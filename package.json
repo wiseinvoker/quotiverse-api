@@ -1,0 +1,41 @@
+{
+  "name": "quotiverse-api",
+  "version": "1.0.0",
+  "description": "Captures the idea of a diverse universe of quotes being shared and discussed within a social network framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiseinvoker/quotiverse-api.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "quote-share",
+    "social",
+    "mongodb"
+  ],
+  "author": "WiseInvoker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiseinvoker/quotiverse-api/issues"
+  },
+  "homepage": "https://github.com/wiseinvoker/quotiverse-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^14.1.0",
+    "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
+    "googleapis": "^92.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.6",
+    "nodemailer": "^6.7.2",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
