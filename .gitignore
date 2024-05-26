@@ -1,0 +1,9 @@
+node_modules
+src/clinicfinder.pem
+src/info.txt
+.idea
+build
+.env
+yarn.lock
+frontend
+package-lock.json
