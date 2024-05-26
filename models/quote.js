@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 
-const quoteSchema = new mongoose.Schema({
-    text: String,
-    author: String,
-    postedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+const QuoteSchema = new mongoose.Schema({
+    text: { type: String, required: true },
+    author: { type: String, required: true },
+    postedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     votes: { type: Number, default: 0 },
-    // other quote details
-});
+    comments: [{ 
+        text: String,
+        postedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
+    }]
+}, { timestamps: true });
 
-
-const Quote = mongoose.model("Quote", quoteSchema);
-
-export default Quote;
+module.exports = mongoose.model('Quote', QuoteSchema);
