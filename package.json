@@ -2,7 +2,7 @@
   "name": "quotiverse-api",
   "version": "1.0.0",
   "description": "Captures the idea of a diverse universe of quotes being shared and discussed within a social network framework.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "npm test"
   },
